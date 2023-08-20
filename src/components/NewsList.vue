@@ -1,6 +1,8 @@
 <template>
   <div class="news">
-    <div class="news__header"></div>
+    <div class="news__header container">
+      <h1>Новости</h1>
+    </div>
     <ul class="news__list list container">
       <li class="list__card card" v-for="item in news" :key="item.id">
         <img class="card__img" v-if="item.image" :src="item.image" />
