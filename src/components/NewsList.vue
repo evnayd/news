@@ -22,7 +22,7 @@
 </template>
 
 <script>
-import { defineComponent, computed, ref } from "vue";
+import { defineComponent } from "vue";
 import moment from "moment";
 
 export default defineComponent({
