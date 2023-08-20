@@ -41,7 +41,9 @@ export default {
 
     const loadMore = async () => {
       try {
-        const response = await fetch("http://flems.github.io/test/api/news/2/");
+        const response = await fetch(
+          "https://flems.github.io/test/api/news/2/"
+        );
         const result = await response.json();
         news.value = news.value.concat(result.items);
         if (result.nav.current == result.nav.total) {
