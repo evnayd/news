@@ -8,7 +8,13 @@
         <img class="card__img" v-if="item.image" :src="item.image" />
         <div class="card__text">
           <div>
-            <p class="card__date">{{ formatDate(item.date) }}</p>
+            <div class="card__date date">
+              <p class="date__day">{{ formatDate(item.date, "DD") }}</p>
+              <div>
+                <p class="date__month">{{ formatDate(item.date, "MMMM") }}</p>
+                <p class="date__year">{{ formatDate(item.date, "YYYY") }}</p>
+              </div>
+            </div>
             <h2 class="card__name">{{ item.name }}</h2>
             <p class="card__preview">{{ item.previewText }}</p>
           </div>
@@ -31,8 +37,8 @@ export default defineComponent({
   props: ["news", "canLoadMore"],
 
   setup(props, context) {
-    const formatDate = (timestamp) => {
-      return moment.unix(timestamp).format("MMMM DD, YYYY");
+    const formatDate = (timestamp, format) => {
+      return moment.unix(timestamp).format(format);
     };
 
     const loadMore = () => {
