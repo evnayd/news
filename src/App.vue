@@ -27,6 +27,7 @@ export default {
       try {
         const response = await fetch("https://flems.github.io/test/api/news/");
         const result = await response.json();
+
         if (result.nav.current == 1) {
           canLoadMore.value = true;
         }
