@@ -11,6 +11,18 @@ body {
   padding: 0;
   color: #222327;
   font-family: "Nunito Sans", Helvetica, sans-serif;
+  animation: smoothLoad;
+  animation-duration: 2s;
+  background-color: white;
+}
+
+@keyframes smoothLoad {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 header {
