@@ -1,6 +1,5 @@
 <template>
   <AppHeader />
-  <h1>{{ news.length }}</h1>
   <NewsList :news="news" :canLoadMore="canLoadMore" @loadMore="loadMore" />
   <AppFooter />
 </template>

@@ -1,1 +1,5 @@
-<template><h1>header</h1></template>
+<template>
+  <header class="container">
+    <img src="./../assets/img/logo.svg" alt="Logo" />
+  </header>
+</template>

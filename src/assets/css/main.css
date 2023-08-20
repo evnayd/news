@@ -1,0 +1,143 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  text-align: left;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+footer {
+  background-color: #f0f6fe;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-align: left;
+}
+
+.news {
+  padding-bottom: 30px;
+}
+
+.news__header {
+  background-image: url("/src/assets/img/hero-background.jpeg");
+  background-repeat: no-repeat;
+  height: 320px;
+  background-image: contain;
+}
+
+.news__list {
+  list-style: none;
+  padding-top: 30px;
+}
+
+.card {
+  border: 1px solid #0f62fe;
+  border-radius: 20px;
+  text-align: left;
+  min-height: 554px;
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+.card__type {
+  font-size: 14px;
+  font-weight: 400;
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  background-color: #f0f6fe;
+  border-radius: 15px;
+  width: fit-content;
+}
+
+.card__text {
+  padding: 20px;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card__img {
+  width: 100%;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  height: 250px;
+}
+
+.card__name {
+  color: #0f62fe;
+  font-size: 26px;
+  line-height: 28px;
+}
+
+.card__preview {
+  font-size: 20px;
+  line-height: 26px;
+}
+
+.container {
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.news__btn {
+  border: 1px solid #0f62fe;
+  border-radius: 8px;
+  color: #0f62fe;
+  background-color: white;
+  padding-left: 32px;
+  padding-right: 32px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.news__btn:hover {
+  background-color: #f0f6fe;
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  .news__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: space-between;
+    padding-top: 60px;
+    padding-bottom: 40px;
+  }
+
+  .card {
+    max-width: 500px;
+    margin-bottom: 0;
+  }
+
+  .news {
+    padding-bottom: 60px;
+  }
+
+  .card__text {
+    padding: 30px;
+  }
+
+  footer {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
