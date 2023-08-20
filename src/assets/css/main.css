@@ -158,6 +158,14 @@ footer {
   margin-bottom: 15px;
 }
 
+.footer__copyright {
+  color: #81899d;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22.4px;
+}
+
 @media screen and (min-width: 768px) {
   header {
     padding-top: 40px;
