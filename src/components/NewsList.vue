@@ -22,7 +22,6 @@
         </div>
       </li>
     </ul>
-
     <button class="news__btn" v-if="canLoadMore" @click="loadMore">
       Загрузить ещё
     </button>
@@ -56,6 +55,7 @@ export default defineComponent({
 <style scoped>
 .news {
   padding-bottom: 30px;
+  text-align: center;
 }
 
 .news__header {
